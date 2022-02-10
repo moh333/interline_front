@@ -1,0 +1,79 @@
+// creat style over bootstrap css style  
+/* ----------------------------------- Accordion Component ----------------------------------- */
+
+.accordion-item {
+   // padding: 30px 0;
+   // border: transparent;
+   border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-title {
+   color: $text-dark-content;
+   p {
+      margin-bottom: 0;
+      font-size: 15px;
+   }
+
+}
+.accordion-button {
+   padding: 0;
+   border: none;
+   cursor: pointer;
+   position: relative;
+   padding: 20px 30px;
+   color: $text-dark-heading !important;
+   &:hover {
+      background-color: $gold-light;
+   }
+   h2 {
+      margin-bottom: 10px;
+   }
+   p {
+      color: $text-dark-content;
+   }
+   &::after {
+      position: absolute;
+      flex-shrink: 0;
+      width: 2.25rem;
+      height: 2.25rem;
+      margin-right: auto;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      content: "";
+      right: 30px;
+      background-image: url(https://i.postimg.cc/mgjV0hxC/down-chevron.png) !important;
+      background-repeat: no-repeat;
+      background-size: .5rem;
+      background-position: center center;
+      transition: transform .2s ease-in-out;
+      transform: rotate(-90deg) !important;
+  }
+  &:not(.collapsed) {
+   background-color: transparent;
+
+      p {
+         color: $text-dark-content;
+      }
+      &::after {
+
+         background-size: .5rem;
+         background-position: center calc(100% - 13px);
+         transform: rotate(90deg)!important;
+      }
+   }
+}
+
+
+.accordion-collapse {
+   // border: none !important;
+
+}
+
+.accordion-body {
+   // border: none !important;
+   padding: 20px 30px;
+}
+
+
+/* ----------------------------------- end Accordion Component ----------------------------------- */

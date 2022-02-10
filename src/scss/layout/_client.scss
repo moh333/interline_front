@@ -1,0 +1,16 @@
+.c-logo {
+   width: 70px;
+   height: 70px;
+   background-color: rgba($gold, 0.1);
+   box-shadow: $box-shadow-medium;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   span {
+      display: inline-block;
+      color: $text-dark-heading;
+      mix-blend-mode: revert;
+   }
+}

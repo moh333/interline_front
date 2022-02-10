@@ -1,0 +1,21 @@
+.b-table {
+
+   td,
+   th {
+      vertical-align: middle;
+      padding: 0;
+
+      div {
+         padding: 8px 16px;
+         height: 100%;
+      }
+   }
+
+   .cell-edit-input {
+      // height: inherit;
+   }
+}
+
+.edit-cell {
+   cursor: pointer !important;
+}

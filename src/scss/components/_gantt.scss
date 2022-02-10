@@ -1,0 +1,21 @@
+@import "~dhtmlx-gantt/codebase/dhtmlxgantt.css";
+// @import "~dhtmlx-gantt/codebase/skins/dhtmlxgantt_material.css";
+
+.gantt_container {
+   height: auto !important;
+   min-height: 500px !important;
+}
+
+div.gantt_cal_light {
+   width: 600px !important;
+   height: auto !important;
+}
+
+
+.gantt_task_line .gantt_task_drag.task_left {
+   left: 12px;
+}
+
+.gantt_task_line .gantt_task_drag.task_right {
+   right: 12px;
+}

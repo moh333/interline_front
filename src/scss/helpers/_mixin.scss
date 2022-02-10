@@ -1,0 +1,102 @@
+// Container mixins
+
+@mixin make-container($gutter: $container-padding-x) {
+   width: 100%;
+   padding-right: var(--#{$variable-prefix}gutter-x, #{$gutter});
+   padding-left: var(--#{$variable-prefix}gutter-x, #{$gutter});
+   margin-right: auto;
+   margin-left: auto;
+}
+
+// media mixin
+
+@mixin desktopWideScreen($width: $desktopWideScreen) {
+
+   //screen in the laptop
+   @media (min-width: $width) {
+      @content;
+   }
+}
+
+@mixin desktopScreen($width: $desktopScreen) {
+
+   //screen in the laptop
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+@mixin tabletScreen($width: $tabletScreen) {
+
+   //screen in the laptop
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+@mixin tabletwideScreen($width: $tabletwideScreen) {
+
+   //screen in the laptop
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+@mixin phoneWideScreen($width: $phoneWideScreen) {
+
+   // Wide screen in the phone
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+@mixin phoneScreen($width: $phoneScreen) {
+
+   // default screen in the phone
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+@mixin phoneSmScreen($width: $phoneSmScreen) {
+
+   // small screen in the phone
+   @media (max-width: $width) {
+      @content;
+   }
+}
+
+// text gradient color mixin
+@mixin text-gradient {
+   background: $text-gradient-red;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   box-decoration-break: clone;
+}
+
+// focus on interaction element mixin
+@mixin focus {
+   outline-color: rgba($red-300, 0.3);
+}
+
+// to clamp the line mixin
+@mixin line-clamp($max-height) {
+   overflow: hidden !important;
+   max-height: $max-height; // for costomize the height depend on the card height
+   text-overflow: ellipsis !important;
+   display: -webkit-box !important;
+   -webkit-line-clamp: 1 !important;
+   -webkit-box-orient: vertical;
+   white-space: nowrap;
+}
+
+// main btn
+@mixin main-btn {
+   font-weight: $font-weight-bold !important;
+   border: 1px solid;
+   transition: all 0.3s ease-in-out;
+   border-radius: 0;
+   font-size: $h5-size;
+   line-height: 2;
+   cursor: pointer;
+}

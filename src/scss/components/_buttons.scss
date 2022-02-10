@@ -1,0 +1,187 @@
+/* ----------------------------------- Button Component ----------------------------------- */
+/* ----- main button ------*/
+.main-btn {
+   @include main-btn;
+   padding: .375rem 1.4rem;
+   font-weight: 800;
+
+   .fa-chevron-right {
+      transition: transform .3s ease-in-out;
+   }
+
+   &:hover {
+      .fa-chevron-right {
+         transform: translateX(3px);
+      }
+   }
+
+   &:focus {
+      box-shadow: 0 0 0 0.25rem rgba($red-300, .3);
+   }
+}
+
+.rounded-btn {
+   border-radius: 200px !important;
+}
+
+/* ----- outline button ------*/
+.outline-btn {
+   border: 2px solid;
+   border-color: $blue-dark;
+
+   &:hover {
+      color: $blue-dark !important;
+   }
+
+   &.router-link-active {
+      background-color: #222233;
+      color: $white;
+
+      &:hover {
+         background-color: rgba($blue-dark, .9);
+         color: $white !important;
+      }
+   }
+}
+
+/* ----- text button ------*/
+.text-btn {
+   padding: 0;
+   transition: .3s;
+   border-color: transparent;
+
+   &:hover {
+      fill: $blue-dark;
+      color: $blue-dark !important;
+      background-color: $gray-200
+   }
+}
+
+/* ----- blue button ------*/
+.blue-dark-btn {
+   background-color: $blue-dark;
+   border-color: $blue-dark;
+   color: $text-white-heading;
+
+   &:hover {
+      background-color: rgba($blue-dark, .9);
+      border-color: rgba($blue-dark, .9) !important;
+      color: $gold;
+   }
+}
+
+.gold-btn {
+   background-color: $gold;
+   color: $white;
+   border-color: $gold;
+   letter-spacing: 1px;
+
+   &:hover {
+      background-color: rgba($gold, .8);
+      border-color: rgba($gold, .8) !important;
+      color: $white;
+   }
+
+   &.router-link-active {
+      background-color: #222233;
+      color: $white;
+
+      &:hover {
+         background-color: rgba($blue-dark, .9);
+         color: $white !important;
+      }
+   }
+}
+
+/* ----- white button ------*/
+.white-btn {
+   background-color: white;
+   border-color: white;
+}
+
+/* ----- black button ------*/
+.gray-btn {
+   background-color: $blue-200;
+   border-color: $blue-200;
+   color: $blue-dark;
+}
+
+/* ----- white button ------*/
+.small-btn {
+   padding: .50rem 1rem;
+   font-size: $h6-size;
+}
+
+/* ----- medium button ------*/
+.medium-btn {
+   padding: 0.5rem 2.4em;
+   font-size: $h5-size;
+}
+
+/* ----- big button ------ */
+.big-btn {
+   padding: 1.1rem 2rem;
+   min-width: 180px;
+}
+
+/* ------ switcher lang button ------ */
+.switcher-lang {
+   background-color: rgba(12, 48, 77, 0.05);
+   border: none !important;
+   display: flex;
+   align-items: center;
+   flex: 1 1 auto;
+   flex-basis: 24px;
+   justify-content: space-between;
+   padding: 4px 15px !important;
+   height: 100%;
+   margin-right: 15px;
+   font-family: $roboto-font;
+   font-weight: $font-weight-bold;
+   font-size: $h6-size;
+   border-radius: 0 !important;
+
+   svg {
+      fill: $text-dark-content;
+      margin-right: 5px;
+   }
+}
+
+.btn-switch {
+   cursor: pointer;
+
+   span {
+      display: inline-block;
+      color: $text-dark-content;
+   }
+}
+
+/*  dropdown lang button */
+.dropdown-lang {
+   height: 23px !important;
+}
+
+/* ------ end switcher lang button ------ */
+
+.google-btn {
+   background-color: #DD4B39;
+   border-color: #DD4B39;
+
+   &:hover {
+      background-color: rgba(#DD4B39, .8);
+      border-color: rgba(#DD4B39, .8) !important;
+      color: $white;
+   }
+}
+
+.facebock-btn {
+   background-color: #3B5998;
+   border-color: #3B5998;
+   color: $white;
+
+   &:hover {
+      color: $white;
+   }
+}
+
+/* ----------------------------------- Button Component ----------------------------------- */

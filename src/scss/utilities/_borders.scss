@@ -1,0 +1,79 @@
+/* 
+
+   ============================= borders =============================
+   
+*/
+.border-none {
+   border: none !important;
+}
+
+.border {
+   border: $border-base
+}
+
+.border-bottom {
+   border-bottom: $border-base !important;
+
+}
+
+.border-top {
+   border-top: $border-base !important;
+}
+
+.border-right {
+   border-right: $border-base !important;
+}
+
+.border-left {
+   border-left: $border-base !important;
+}
+
+
+.lg-border-top {
+   border-top: 6px solid $text-dark-heading;
+}
+
+.lg-border-bottom {
+   border-bottom: 10px solid $gold !important;
+}
+
+.lg-border-right {
+   border-right: 10px solid $gold !important;
+}
+
+
+.border-dashed-gold {
+   border: 2px dashed $gold !important;
+}
+
+.border-radius-none {
+   border-radius: 0px
+}
+
+.border-radius-small {
+   border-radius: 4px
+}
+
+.border-radius-medium {
+   border-radius: 8px;
+
+   &__top {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+   }
+
+   &__bottom {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+   }
+}
+
+.border-radius-rounded {
+   border-radius: 200px
+}
+
+/* 
+
+   ============================= End borders =============================
+   
+*/

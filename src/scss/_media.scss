@@ -1,0 +1,268 @@
+/* 
+
+   ============================= media responsive ============================= 
+
+*/
+/* media responsive for desktop screen */
+@include desktopWideScreen {
+   .content-padding {
+      padding: 40px;
+   }
+
+   .column-reverse {
+      flex-direction: unset;
+   }
+}
+
+@include desktopScreen {
+   header {
+      h1 {
+         padding-top: 0;
+      }
+   }
+
+   .nav-link {
+      font-size: $h6-size
+   }
+
+   .backdrop-box {
+      // display: none;
+      margin-top: -80px
+   }
+
+   .content-padding {
+      padding: 35px 22px;
+   }
+
+
+
+   .max-text-lmt-x-small {
+      width: auto;
+   }
+
+
+}
+
+/* media responsive for tablet screen */
+@include tabletScreen {}
+
+/* media responsive for tablet wide screen */
+@include tabletwideScreen {
+   .main-navbar {
+      height: auto !important;
+      padding: 20px !important;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      z-index: 99;
+   }
+
+   .header {
+      padding-top: 80px;
+   }
+
+   .navbar-nav {
+
+      // height: auto;
+      .nav-item,
+      .dropdown {
+         width: 100% !important;
+         margin-right: 0 !important;
+         margin-bottom: 20px;
+      }
+
+   }
+
+
+   .md-text {
+      font-size: 18px;
+   }
+
+   .messaging-services-block {
+      .card-title {
+         font-size: 18px;
+      }
+   }
+
+
+   .footer-links {
+      .navbar-nav {
+         margin-bottom: 15px;
+      }
+
+      .ml-auto {
+         margin-left: 0 !important;
+      }
+   }
+
+   .text-center {
+      text-align: left !important;
+   }
+
+   .column-reverse {
+      flex-direction: column-reverse;
+   }
+
+   .card-image {
+      max-height: 200px !important
+   }
+
+   footer {
+      img {
+         margin-bottom: 15px;
+      }
+
+      .d-flex {
+         flex-direction: column;
+      }
+   }
+
+   .max-text-lmt-medium,
+   .max-text-lmt-small,
+   .max-text-lmt-x-small {
+      width: 100%;
+   }
+}
+
+
+@include tabletScreen {
+
+   .coach-service {
+      .overlay-card {
+         img {
+            height: 800px !important;
+         }
+      }
+   }
+
+   .navbar-nav {
+      border-bottom: 1px solid rgba($color: #eee, $alpha: 1);
+      margin-bottom: 15px;
+
+      .nav-item {
+         border: none !important;
+      }
+   }
+
+
+   .search-wrap .form-control,
+   .search-wrap .form-select {
+      border: none
+   }
+
+
+   .header-body {
+      padding-bottom: 60px;
+   }
+
+   .img-block {
+      display: none;
+   }
+
+   .backdrop-box {
+      margin-top: 0;
+      margin: 0 40px;
+      padding: 30px;
+      border-radius: 8px;
+   }
+
+   .absolute-block {
+      // display: none;
+   }
+
+   .footer-wrap {
+      .navbar-nav {
+         border-bottom: none !important
+      }
+   }
+}
+
+/* media responsive for phone wide screen */
+@include phoneWideScreen {
+
+   .coach-service {
+      .overlay-card {
+         img {
+            height: 1400px !important;
+         }
+      }
+   }
+
+   .btn {
+      width: 100%;
+   }
+
+   .logo-on-scroll {
+      display: none !important;
+   }
+
+   .nav-tabs {
+      justify-content: flex-start !important;
+
+      .nav-link {
+         font-size: 12px;
+         padding: 0.5rem 0.5rem !important;
+      }
+   }
+
+   .backdrop-box {
+      margin-top: 0;
+      margin: 0 15px;
+      padding: 20px 0;
+      border-radius: 8px;
+   }
+
+   .line-left::before {
+      content: none;
+   }
+
+   .locations-block {
+
+      .h3 {
+         text-align: left;
+      }
+   }
+
+   .none-in-mobile {
+      display: none
+   }
+
+   .absolute-with-bg_gradient {
+      background: rgba(#000000, .5) !important
+   }
+
+   .content-padding {
+      padding: 15px 12px;
+   }
+
+   .header-body {
+      padding-bottom: 0;
+   }
+
+   .column-in-mobile {
+      flex-direction: column;
+   }
+
+}
+
+/* media responsive for phone screen */
+@include phoneScreen {
+   .small-btn {
+      font-size: 11px;
+   }
+
+   .coach-service {
+      .overlay-card {
+         img {
+            height: 1900px !important;
+         }
+      }
+   }
+
+}
+
+/* 
+
+   ============================= End media responsive ============================= 
+
+*/

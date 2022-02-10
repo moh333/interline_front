@@ -1,0 +1,184 @@
+{
+   "nav": {
+      "dashboard": "Dashboard",
+      "trips": "Trips",
+      "orders": "Orders",
+      "customers": "Customers",
+      "drivers": "Drivers",
+      "vehicles": "Vehicles",
+      "proposals": "Proposals",
+      "invoices": "Invoices",
+      "reports": "Reports",
+      "support": "Support",
+      "rout_track": "Rout track",
+      "calculate_price": "Calculate price",
+      "add_vehicle": "Add vehicle",
+
+      "services": "Services",
+      "global_transportation": "Global Transportation",
+      "fleet": "Fleet",
+      "about_us": "About us",
+      "team": "The Team",
+      "contact": "contact"
+   },
+   "features": {
+      "experience": "30 years of experience in exclusive chauffeured service",
+      "certified": "DEKRA certified, permanently employed chauffeurs guarantee high safety and quality",
+      "quality": "Same quality standard in over 1000 cities"
+   },
+   "about_us": {
+      "info_1": "INTERLINE is a first-class chauffeur and limousine service that provides its customers worldwide with high-quality services in the area of ​​exclusive passenger transport and all from a single source.",
+      "info_2": "We are committed to providing our customers with perfect and reliable service of consistently high quality and with an absolute guarantee. Whether on the ground or in the air, you can rely on our all-round service."
+   },
+   "our_services": {
+      "title": "Our Services",
+      "info_1": "Over the years, INTERLINE has acquired extensive knowledge and developed to become a consummate professional in every segment of exclusive chauffeured transportation.",
+      "services": [{
+            "image": "https://www.interline-frankfurt.de/images/header/limousinen-chauffeur-service2-L.jpg",
+            "title": "Limousine and chauffeur service",
+            "link": "/limousine"
+         },
+         {
+            "image": "https://www.interline-frankfurt.de/images/header/busservice-M.jpg",
+            "title": "Bus Service",
+            "link": "/coach"
+         },
+         {
+            "image": "https://www.interline-frankfurt.de/images/header/services3-L.jpg",
+            "title": "Airport transfer",
+            "link": "/airport"
+         }
+      ]
+   },
+   "Fleet": {
+      "title": "Our Modern Fleet",
+      "info_1": "We have an extensive range of extravagant limousines, coaches, minivans and aircraft, all equipped with state-of-the-art technology and top-quality extras.",
+      "info_2": "Thanks to the regular safety and maintenance checks we carry out, we can guarantee an absolutely safe trip every time. The choice of vehicle is entirely up to you and what you're looking for. Discover INTERLINE's extensive fleet for yourself.",
+      "fleet": [{
+         "image": "https://www.interline-frankfurt.de/images/modulbilder/flottemodul/limousinen.jpg",
+         "title": "Limousinen",
+         "link": "/fleet/limousines"
+      }, {
+         "image": "https://www.interline-frankfurt.de/images/modulbilder/flottemodul/minivans.jpg",
+         "title": "Minivans",
+         "link": "/fleet/minivans"
+      }, {
+         "image": "https://www.interline-frankfurt.de/images/modulbilder/flottemodul/busse.jpg",
+         "title": "Busse",
+         "link": "/fleet/coaches"
+      }]
+   },
+
+   "facts": [{
+         "id": 1,
+         "numbers": "611,079",
+         "icon": "BriefcaseIcon",
+         "info": "jobs in Germany and abroad (since 2000)"
+      },
+      {
+         "id": 2,
+         "numbers": "1,000+",
+         "icon": "LocationIcon",
+         "info": "business locations worldwide"
+      },
+      {
+         "id": 3,
+         "numbers": "500",
+         "icon": "PartnershipIcon",
+         "info": "partners in over 60 countries"
+      },
+      {
+         "id": 4,
+         "numbers": "46,486,411",
+         "icon": "DriverIcon",
+         "info": "km driven of the entire INTERLINE group (since 2000 in Germany)"
+      }
+   ],
+
+   "finances": [
+      "A leading centre for finance, tradeshows and the services industry, Frankfurt is a key location for the INTERLINE limousine service – not just in Germany but also from a global perspective. The city’s central location combined with its excellent infrastructure makes the “Metropolis on the River Main” one of Europe's major traffic hubs.",
+      "The dedicated professionals at Interline take care of customer needs here every day. Business clients from the most varied sectors of industry and commerce, as well as an increasing number of private individuals have come to appreciate the service and quality standards we have set. Airport transfer services, business trips or sightseeing tours – no matter what you need, you can rest assured that we have the perfect solution, guaranteeing you a service tailored to your needs for every stage of your journey.",
+      "As a partner of CAREY International, the team here in Frankfurt not only offers this reliable service in the Rhein-Main region, but also in more than 1000 cities around the world. Irrespective of time zones, currencies or languages – around the clock and no matter where you happen to be.",
+      "Like all partners, INTERLINE limousine service Frankfurt provides professional and courteous chauffeurs, as well as a modern and fully serviced fleet of vehicles from all reputable manufacturers – from luxurious limousines to top-class buses, spacious minivans and special-purpose off-road vehicles."
+   ],
+   "locations_in_germany": "Our Locations In Germany",
+   "show_all_german_locations": "Show all German locations",
+   "show_all_international_locations": "Show all international locations",
+
+   "langs": {
+      "english": "English",
+      "german": "German"
+   },
+   "buttons": {
+      "learn_more": "Learn more",
+      "get_started": "Get started",
+      "reserve_now": "reserve now"
+   },
+   "v_table": {
+      "class": "class",
+      "type": "Type",
+      "category": "Category",
+      "size": "Size",
+      "price": "price",
+      "date": "date",
+      "Customer_name": "Customer name",
+      "id": "ID"
+   },
+
+   "orders_statistics": [{
+         "type": "all orders",
+         "quantity": 50
+      },
+      {
+         "type": "in progress",
+         "quantity": 40
+      },
+      {
+         "type": "completed",
+         "quantity": 7
+      },
+      {
+         "type": "canceld",
+         "quantity": 3
+      }
+   ],
+
+
+   "trips_statistics": [{
+         "type": "all trips",
+         "quantity": 50
+      },
+      {
+         "type": "on the road",
+         "quantity": 40
+      },
+      {
+         "type": "on break",
+         "quantity": 7
+      },
+      {
+         "type": "completed",
+         "quantity": 3
+      }
+   ],
+
+
+   "vehicles_statistics": [{
+         "type": "all vehicles",
+         "quantity": 50
+      },
+      {
+         "type": "on the road",
+         "quantity": 40
+      },
+      {
+         "type": "available",
+         "quantity": 7
+      },
+      {
+         "type": "out of service",
+         "quantity": 3
+      }
+   ]
+
+}

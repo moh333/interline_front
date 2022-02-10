@@ -1,0 +1,362 @@
+// creat style over bootstrap css style 
+/* ----------------------------------- Card Component ----------------------------------- */
+.card {
+   border: none;
+}
+
+.card-body {
+   display: -webkit-flex;
+   flex-direction: column;
+   flex: 1 1 auto;
+}
+
+/* if there is an img in the card */
+.card-img-top,
+.default-image {
+   min-height: 200px;
+   max-height: 200px;
+}
+
+.card-img-top {
+   object-fit: cover;
+   object-position: center;
+}
+
+.default-image {
+   background-color: $gray-100;
+   border-bottom: $border-base;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   img {
+      width: 80px;
+   }
+}
+
+.card-avatar {
+   width: 60;
+   height: 60px;
+   border-radius: 4px;
+   overflow: hidden;
+
+   img {
+      width: 100%;
+      object-fit: cover;
+   }
+}
+
+.img-preview {
+
+   &__sm {
+      width: 120px;
+      // height: 120px;
+   }
+
+   img {
+      width: 100%;
+      object-fit: cover
+   }
+}
+
+.card-item {
+   position: relative;
+
+   &__heading {
+      &:not(:last-of-type) {
+         // margin-right: 6px;
+      }
+   }
+
+   &:first-of-type {
+
+      // margin-right: 10px;
+      &::before {
+         position: absolute;
+         content: '+';
+         left: 10px;
+         top: 0px;
+         width: 14px;
+         height: auto;
+      }
+   }
+
+   &:not(:last-of-type) {
+      // margin-right: 10px;
+      border-right: $border-base;
+   }
+
+   // border-top: $border-base;
+   box-sizing: border-box;
+}
+
+.has-total {
+   .card-item {
+      background-color: #F7EED6;
+
+      &:first-of-type {
+         font-size: 12px;
+
+         // margin-right: 10px;
+         &::before {
+            position: absolute;
+            content: '€';
+            left: 10px;
+            // width: 14px;
+            top: 2px;
+            height: auto;
+         }
+      }
+   }
+}
+
+.line-right {
+   position: relative;
+
+   &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100%;
+      top: 0;
+      background-color: rgba($text-dark-heading, .1);
+   }
+}
+
+.overlay-card {
+   overflow: hidden;
+}
+
+.absolute-with-bg {
+
+
+   &_full {
+      background: rgba($blue-dark, .84);
+   }
+
+   &_gradient {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 0) 54%);
+   }
+}
+
+.card-content {
+   position: relative;
+   width: 100%;
+   height: inherit;
+   display: flex;
+}
+
+
+/* class for hover on the card */
+.card-hover {
+   transition: box-shadow 0.3s ease-in-out;
+
+   &:hover {
+      cursor: pointer;
+      // background-color: rgba(#1b1f23, 0.8);
+      // transform: translateY(-3px);
+      box-shadow: $box-shadow-large;
+
+      svg {
+         fill: $gold !important;
+      }
+
+      .text-btn {
+         color: $gold;
+      }
+   }
+}
+
+/* class for transition the card if there is a link */
+.card-transition {
+   transition: all 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+   cursor: pointer;
+
+   &:hover {
+      background: linear-gradient(rgb(196, 224, 253) 0%, rgb(196, 224, 253) 16.15%, rgb(196, 224, 253) 29.69%, rgb(196, 224, 253) 40.63%, rgba(196, 224, 253, 0.8) 59.37%, rgba(196, 224, 253, 0.5) 81.77%);
+
+      .h4,
+      .label-title {
+         color: $blue-dark
+      }
+
+   }
+}
+
+.line-left {
+   position: relative;
+
+   &::before {
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: 0px;
+      background-color: #fff;
+      width: 4px;
+      height: 25%;
+      border-radius: 10px;
+
+   }
+}
+
+.heading-uderline {
+   position: relative;
+   margin-bottom: 50px;
+
+   &::before {
+      position: absolute;
+      content: "";
+      bottom: -18px;
+      left: 0px;
+      background-color: $gold;
+      width: 20%;
+      height: 4px;
+      border-radius: 10px;
+
+   }
+}
+
+/* arrow card */
+.arrow-card {
+   justify-content: space-between;
+
+}
+
+.facts-wrap {
+   padding-bottom: 100px
+}
+
+.facts-infos {
+   margin-top: -80px;
+   border-top: 6px solid $gold;
+}
+
+.vue-notification {
+   box-shadow: $box-shadow-large;
+   padding: 12px 25px;
+
+   .notification-title {
+      font-size: $h5-size;
+   }
+}
+
+.remove-notify {
+   background-color: $gold;
+   color: $white;
+   border-color: $blue-dark;
+}
+
+
+.card-img-top {
+   border-top-right-radius: 8px !important;
+   border-top-left-radius: 8px !important;
+}
+
+.card-image {
+   // height: 400px;
+   min-height: 400px;
+   overflow: hidden;
+
+   img {
+      min-height: inherit !important;
+      object-fit: cover;
+      object-position: right;
+   }
+}
+
+/* card icon class */
+.card-icon {
+   margin-bottom: 22px;
+}
+
+.int-filepond--wrapper {
+   .filepond--root {
+
+      .filepond--panel[data-scalable=true] {
+         border: 1px solid #ced4da !important
+      }
+   }
+}
+
+
+.crlc-icon {
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2px;
+}
+
+/* x small icon class */
+.sx-icon {
+
+   svg,
+   img {
+      width: 18px;
+      height: 18px;
+   }
+}
+
+/* m small icon class */
+.sm-icon {
+   svg {
+      width: 30px;
+      height: 30px;
+   }
+}
+
+/* medium icon class */
+.md-icon {
+   svg {
+      width: 45px;
+      height: 45px;
+   }
+}
+
+/* large icon class */
+.lg-icon {
+
+   svg {
+      width: 55px;
+      height: 55px;
+   }
+
+   img {
+      width: 155px;
+      object-fit: cover
+   }
+}
+
+/* card footer */
+.card-footer {
+   border-top: none;
+   padding: 0.75rem 1rem;
+
+   .btn {
+      font-size: 12px;
+   }
+}
+
+
+.rental-bar {
+   position: fixed;
+   width: 100%;
+   // background-color: white;
+   z-index: 999;
+   bottom: 0;
+   left: 0;
+   box-shadow: 0 -8px 16px rgba($blue-dark, .08);
+}
+
+#vehiclesGallary {
+   border-radius: 12px !important;
+   overflow: hidden;
+
+   .img-fluid {
+      height: 500px !important;
+   }
+}
+
+/* ----------------------------------- end Card Component ----------------------------------- */

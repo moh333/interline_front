@@ -1,0 +1,220 @@
+.trip-page {
+   .facts--wrap {
+      flex: 0 0 auto;
+   }
+
+   .timeline-view {
+      flex: 1 1 auto;
+      position: relative;
+   }
+}
+
+.timeline-wrap {
+   overflow: hidden;
+   position: relative;
+   border: $border-base;
+   min-height: 500px;
+
+}
+
+.timeline-sidebar {
+   width: 320px;
+   flex: 0 0 auto;
+   border-right: $border-base;
+}
+
+.timeline-sidebar_header,
+.timeline_month {
+   background-color: rgb(244, 245, 247);
+   border-bottom: $border-base;
+}
+
+.timeline-table {
+   overflow: auto;
+
+   &::-webkit-scrollbar {
+      width: 1.7em;
+      height: .6em;
+   }
+
+   &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.23);
+      // border-radius: 10px;
+      background-color: #F5F5F5;
+      padding: 3px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: rgba(#666, .9);
+   }
+}
+
+
+.timeline-table_body {
+   // flex: 0 0 auto
+}
+
+.timeline_days-in-month {
+   position: relative;
+   width: 100%;
+   left: 0;
+}
+
+.timeline-item_day-date {
+   // width: 52px;
+}
+
+.timeline-item_day-date,
+.timeline-item_time-date {
+   border-right: $border-base;
+   // width: 52px;
+}
+
+.timeline-item_time-date {
+   &:last-of-type {
+      border-right: none;
+   }
+}
+
+.timeline_month-name {
+   div.h5 {
+      display: inline-block;
+      transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+      position: sticky;
+      left: 10px;
+   }
+}
+
+.timeline-trips {
+   position: relative;
+   z-index: 99;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   .timeline-item_trip {
+      position: relative;
+
+   }
+}
+
+.timeline-item_trip,
+.timeline-schedule_item {
+   height: 44px;
+   display: flex;
+   -webkit-box-align: center;
+   align-items: center;
+
+
+   &:nth-child(even) {
+      background-color: rgb(244, 245, 247);
+
+   }
+}
+
+.months-in-year {
+   position: relative;
+   display: inline-flex;
+   flex-direction: column;
+}
+
+.month_item {
+   // display: inline-block;
+   // position: relative;
+   top: 0;
+   left: 0;
+}
+
+.timeline-item_month {
+   width: 100%;
+
+}
+
+._timeline {
+   min-width: 140px;
+   position: absolute;
+   display: flex;
+   -webkit-box-align: center;
+   align-items: center;
+   -webkit-box-pack: end;
+   justify-content: flex-end;
+   // padding: 0px 5px;
+   z-index: 3;
+   height: 25px;
+   border-radius: 3px;
+   background: rgb(135, 119, 217);
+   transition: none 0s ease 0s;
+   cursor: pointer;
+
+   .timeline-handel {
+      width: 100%;
+      height: inherit;
+      align-items: center;
+      justify-content: space-between;
+
+      .timeline-handel_left,
+      .timeline-handel_right {
+         background-color: #5d5296;
+         width: 10px;
+         height: 70%;
+         border-radius: 3px;
+         // opacity: 0;
+         cursor: col-resize;
+         transition: all .3s ease 0s;
+      }
+   }
+
+
+   &:hover {
+
+      .timeline-handel_left,
+      .timeline-handel_right {
+
+         opacity: 1;
+      }
+   }
+}
+
+.not-resize {
+   resize: none;
+   visibility: hidden;
+   // display: none;
+}
+
+.timeline-sidebar_info {
+   position: absolute;
+   background-color: #fff;
+   right: 0;
+   height: 100%;
+   width: 380px;
+   z-index: 99;
+   box-shadow: $box-shadow-large;
+   padding: 20px;
+   transform: translateX(100%);
+   transition: transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.active_info {
+   transform: translateX(0);
+}
+
+
+.timeline_create-bar {
+   padding: 30px;
+   position: fixed;
+   // height: 300px;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   box-shadow: $box-shadow-large;
+   background-color: #fff;
+   z-index: 999;
+   transform: translateY(110%);
+   transition: transform .4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.active_bar {
+   transform: translateY(0);
+}

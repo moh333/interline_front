@@ -1,0 +1,156 @@
+/* 
+
+   ============================= Typography style =============================
+
+*/
+
+/* heading font family */
+.h1 {
+   font-weight: $font-weight-extra-bold !important;
+   // background-color: transparent
+}
+
+
+
+.h2,
+.h3 {
+   font-weight: $font-weight-bold
+}
+
+.h4,
+.h5,
+.h6 {
+   font-weight: $font-weight-semi-bold
+}
+
+/* heading size */
+.h1 {
+   font-size: $h00-size;
+}
+
+.h2 {
+   font-size: $h1-size;
+   line-height: $lh-condensed;
+}
+
+.h3 {
+   font-size: $h2-size;
+}
+
+.h4 {
+   font-size: $h4-size;
+}
+
+.h5 {
+   font-size: $h5-size;
+}
+
+.h6 {
+   font-size: $h5-size;
+}
+
+
+.f1 {
+   font-size: $f1;
+   line-height: $lh-default !important;
+}
+
+.f2 {
+   font-size: $f2;
+   line-height: $lh-default !important;
+}
+
+.f3 {
+   font-size: $f3;
+   line-height: $lh-default !important;
+}
+
+.f4 {
+   font-size: $f4;
+   line-height: $lh-default !important;
+   font-weight: 500
+}
+
+.f5 {
+   font-size: $f5;
+   line-height: $lh-default !important;
+}
+
+.fw-bold {
+   font-weight: $font-weight-bold
+}
+
+/* content style */
+
+p {
+   font-size: $h3-size;
+   font-weight: $font-weight-light;
+   line-height: $lh-default !important;
+}
+
+
+a,
+label {
+   font-weight: 600;
+   line-height: $lh-default;
+}
+
+
+/* for limit width the text  */
+.max-text-lmt-x-small {
+   width: 85%;
+}
+
+.max-text-lmt-small {
+   width: 78%;
+}
+
+.max-text-lmt-medium {
+   width: 70%;
+}
+
+.max-text-lmt-large {
+   width: 50%;
+}
+
+.md-text {
+   font-size: $h3-size;
+}
+
+.md-text {
+   font-size: $h3-size;
+}
+
+.capitalize {
+   text-transform: capitalize !important;
+}
+
+/* for clamp the text  */
+.line-clamp2 {
+   @include line-clamp(20px)
+}
+
+.line-clamp3 {
+   @include line-clamp(84px)
+}
+
+/* Typography style in phone*/
+@include phoneWideScreen {
+   .h1 {
+      font-size: $h0-size-mobile;
+   }
+
+   .h2 {
+      font-size: $h1-size-mobile;
+   }
+
+   .h3 {
+      font-size: $h2-size-mobile;
+   }
+}
+
+/* 
+
+   ============================= end Typography =============================
+   
+*/

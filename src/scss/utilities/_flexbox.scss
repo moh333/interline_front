@@ -1,0 +1,51 @@
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
+
+.flex-basis-2 {
+   flex-basis: calc(100% / 2);
+}
+
+.flex-basis-3 {
+   flex-basis: calc(100% / 3);
+}
+
+.flex-basis-4 {
+   flex-basis: calc((100% / 4) - 8px) !important;
+}
+
+
+@include desktopWideScreen {
+   .col-lg-block {
+      display: block !important;
+   }
+
+   .col-lg-none {
+      display: none !important;
+   }
+
+   .flex-lg-row {
+      flex-direction: row
+   }
+}
+
+@include tabletScreen {
+
+   .col-md-none,
+   .d-md-none {
+      display: none !important;
+   }
+
+   .col-md-block {
+      display: block !important;
+   }
+
+   .flex-md-column {
+      flex-direction: column
+   }
+
+   .col-md-reverse {
+      flex-direction: column-reverse !important;
+   }
+}

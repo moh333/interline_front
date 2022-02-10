@@ -1,0 +1,200 @@
+// creat style over top bootstrap css style 
+/* ----------------------------------- Dropdown Component ----------------------------------- */
+
+.dropdown-menu {
+   min-width: 200px;
+   box-shadow: $box-shadow-large;
+   border: none;
+   white-space: nowrap !important;
+}
+
+/* dropdown item */
+.dropdown-item {
+
+
+
+   h5 {
+      font-size: $h4-size;
+      font-weight: $font-weight-bold;
+      color: $text-dark-heading;
+   }
+
+   p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+   }
+}
+
+/* dropdown item in focus state */
+.dropdown-item:focus,
+.dropdown-item:hover {
+   background-color: $gray-100 !important;
+}
+
+
+.dropdown-menu.show {
+   overflow: initial !important;
+}
+
+.dropdown-toggle {
+   i {
+      margin-left: 2px;
+      font-size: 10px;
+   }
+}
+
+.dropdown-toggle::after {
+   content: none;
+}
+
+/* megamenu dropdown */
+.megamenu {
+   position: static;
+
+   .dropdown-menu {
+      padding: 0;
+      position: absolute;
+      left: auto;
+      right: 0;
+      width: 90%;
+      margin-right: 5%;
+      margin-top: 0;
+      border: none;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+
+      .dropdown-menu-content {
+         padding: 20px;
+      }
+   }
+}
+
+.bootstrap-select {
+
+   .dropdown-toggle,
+   .dropup .dropdown-toggle {
+      background-color: $white;
+      border-color: #ced4da;
+
+      &:hover {
+         border-color: $gold;
+      }
+
+      &::after {
+         content: "";
+         display: inline-block;
+         top: 0;
+         width: 0.40em;
+         height: 0.40em;
+         border-width: 0.10em 0.10em 0 0 !important;
+         border-color: $blue-dark;
+         transform: rotate(135deg);
+         margin-right: 0.1em;
+      }
+   }
+
+   .dropdown-item.active,
+   .dropdown-item:active {
+      background-color: $gold;
+   }
+
+   .dropdown-item:focus,
+   .dropdown-item:hover {
+      // background-color:  !important;
+      color: $blue-dark !important;
+   }
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+   outline: thin dotted $gold-light !important;
+}
+
+/* megamenu item heading */
+.megamenu-item--heading {
+   align-items: center;
+   margin-bottom: 8px;
+
+   h6 {
+      margin-bottom: 0;
+      margin-left: 8px;
+   }
+}
+
+/* megamenu dropdown item */
+.megamenu-item {
+   h6 {
+      color: $text-dark-heading;
+   }
+
+   ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+         padding-left: 25px;
+
+         a {
+            font-size: $h5-size;
+         }
+      }
+   }
+}
+
+/* megamenu dropdown item solutions block */
+.megamenu-item--solutions {
+   ul {
+      li {
+         padding-left: 0 !important;
+      }
+   }
+}
+
+.dropdown-menu-container {
+   width: 78% !important;
+   margin-right: 20% !important;
+
+}
+
+
+.solutions-info {
+   background-color: $gray-100;
+   height: 332px;
+
+   h2 {
+      font-family: $roboto-font !important;
+      padding-top: 40px;
+   }
+
+   p {
+      font-family: $roboto-font;
+   }
+}
+
+.dropdown-lang {
+   .flag-item {
+      width: 20px !important;
+   }
+
+   .selectet-lang {
+      font-size: 10px !important;
+   }
+
+   .btn-switch {
+      font-size: 12px !important;
+   }
+}
+
+/* media mixin screen in the laptop */
+@include tabletwideScreen {
+
+   .megamenu,
+   .dropdown-menu {
+      position: relative !important;
+   }
+
+   .dropdown-menu {
+      box-shadow: none !important;
+   }
+}
+
+/* ----------------------------------- end Dropdown Component ----------------------------------- */

@@ -1,0 +1,170 @@
+/* 
+
+   ============================= Color system ============================= 
+
+*/
+
+/* ---------- Background colors Alias ---------- */
+
+.bg-gray-light {
+   background-color: $gray-100;
+}
+
+.bg-gray {
+   background-color: #F2F2F2;
+}
+
+.bg-gray-120 {
+   background-color: $gray-120;
+}
+
+.bg-gold {
+   background-color: $gold;
+}
+
+.bg-gold-400 {
+   background-color: rgba($gold, 0.2);
+}
+
+.bg-gold-100 {
+   background-color: rgba($gold, 0.1);
+}
+
+.bg-gold-light {
+   background-color: rgba($gold, 0.08);
+}
+
+.bg-gold-300 {
+   background-color: rgba($gold, 0.4)
+}
+
+.bg-blue-200 {
+   background-color: $blue-200 !important;
+}
+
+.bg-blue-light {
+   background-color: $bg-blue-light !important;
+}
+
+.bg-blue-dark {
+   background-color: $blue-dark;
+}
+
+.bg-blue-700 {
+   background-color: rgba($blue-dark, 0.8);
+}
+
+.bg-teal-light,
+.table-bg-teal-light {
+   background-color: #C8FAEF !important;
+   color: $blue-dark !important;
+   border-color: rgba($blue-dark, 0.2) !important;
+}
+
+.bg-teal-dark {
+   background-color: #008B9A;
+   color: $white !important;
+   border-color: rgba($white, .3) !important;
+}
+
+.bg-yellow-light {
+   background-color: #F7EED6;
+   ;
+}
+
+
+
+/* ---------- text colors Alias ---------- */
+
+/* for white heading color */
+.text-white-heading {
+   color: $text-white-heading !important;
+}
+
+/* for white content color */
+.text-white-content {
+   color: $text-white-content;
+}
+
+/* for dark heading color */
+.text-dark-heading {
+   color: $text-dark-heading;
+}
+
+/* for dark content color */
+.text-dark-content {
+   color: $text-dark-content;
+}
+
+/* for blue light heading color */
+.text-blue-light-heading {
+   color: $blue-light;
+}
+
+/* for dark content color */
+.text-blue-light-content {
+   color: $blue-light;
+}
+
+
+/* for gold content color */
+.text-gold-content {
+   color: $text-gold-content;
+}
+
+/* for gold heading color */
+.text-gold-heading {
+   color: $text-gold-heading;
+}
+
+/* for gradient heading text color */
+.text-gradient-red {
+   @include text-gradient;
+}
+
+/* for label text color */
+label {
+   color: $text-dark-content;
+}
+
+/* ---------- svg colors Alias ---------- */
+
+/* for svg blue color */
+.fill-blue {
+   fill: $text-dark-heading;
+}
+
+/* for svg gold color */
+.fill-gold {
+   fill: $gold;
+}
+
+/* for svg blue-300 color */
+.fill-blue-300 {
+   fill: $text-dark-content;
+}
+
+/* for svg blue-light color */
+.fill-blue-light {
+   fill: rgba($blue-dark, .4);
+}
+
+/* for svg white color */
+.fill-white {
+   fill: $white !important;
+}
+
+/* link blue */
+.link-blue {
+   color: rgba($blue-dark, .4);
+
+   &:hover {
+      color: $blue-dark;
+   }
+}
+
+/* 
+
+   ============================= End Color system =============================
+
+*/

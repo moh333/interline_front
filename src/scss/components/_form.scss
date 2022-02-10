@@ -1,0 +1,211 @@
+// creat style over bootstrap css style 
+/* ----------------------------------- Form Component ----------------------------------- */
+/* form control class */
+.form-control,
+.form-select {
+   height: 40px;
+}
+
+/* textarea input */
+textarea {
+   height: 206px !important;
+   max-height: 206px !important;
+}
+
+.search-wrap {
+   height: 60px;
+
+   form,
+   .input-group,
+   .form-control,
+   .form-select {
+      height: 100% !important;
+      border: none;
+      background-color: transparent;
+
+   }
+
+   .form-control,
+   .form-select {
+      border-left: $border-base;
+   }
+
+   .input-group {
+      position: relative;
+
+      .input-group-text {
+         position: absolute;
+         height: 100%;
+         padding-right: 30px;
+         border: none;
+         background-color: transparent;
+
+         svg {
+            fill: rgba($black, .6) !important
+         }
+      }
+   }
+
+   .form-select {
+      border-radius: 0 !important;
+   }
+
+   .form-control,
+   .input-group {
+      border-top-right-radius: 200px !important;
+      border-bottom-right-radius: 200px !important;
+
+   }
+
+
+   .form-control {
+      background-color: transparent;
+      padding-right: 70px
+   }
+
+   .btn {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 200px !important;
+      border-bottom-left-radius: 200px !important;
+   }
+}
+
+.form-control,
+.form-select {
+   &:hover {
+      border-color: $gold
+   }
+
+}
+
+.form-floating>label {
+   color: $gold;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+   background-color: $gold-light !important;
+   opacity: 1;
+}
+
+/* form-check-input and form-control in focus mode */
+.form-check-input:focus,
+.form-control:focus,
+.form-control.focus,
+.form-select:focus,
+.btn:focus,
+.btn-check:checked,
+.btn-checked:checked,
+.custom-control-input:focus~.custom-control-label::before {
+   color: #212529;
+   // background-color: transparent;
+   border-color: $gold !important;
+   outline: 0 !important;
+   box-shadow: 0 0 0 0.2rem rgba($gold, .4) !important;
+}
+
+.b-form-spinbutton {
+   .focus {
+      box-shadow: 0 0 0 0.2rem rgba($gold, .4) !important;
+   }
+}
+
+/* form-check-input in checked mode */
+.form-check-input:checked {
+   background-color: $gold;
+   border-color: $gold;
+}
+
+
+.btn-checked-rounded,
+.btn-checked {
+   cursor: pointer;
+
+}
+
+.custom-control-label {
+   vertical-align: middle;
+}
+
+.custom-checkbox_wrap {
+   padding: 7px 7px 8px 30px;
+   // border: 1px solid #ced4da;
+   border-radius: .25rem;
+   background-color: $white;
+
+   &:hover {
+      background-color: #fafafa;
+   }
+
+
+
+   .custom-control-label::before,
+   .custom-control-label::after,
+      {
+      top: 0;
+   }
+
+   .btn-checked-rounded {
+      border-radius: 200px;
+   }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+   border-color: $gold;
+   background-color: $gold
+}
+
+
+.btn-check:active+.btn-checked,
+.btn-check:checked+.btn-checked,
+.btn-check:active+.btn-checked-rounded,
+.btn-check:checked+.btn-checked-rounded,
+.btn-checked.active,
+.btn-checked-rounded.active,
+.btn-checked.dropdown-toggle.show,
+.btn-checked-rounded:active,
+.btn-checked:active {
+   color: $gold;
+   background-color: $gold-light;
+   border-color: $gold;
+
+   .h4 {
+      color: $gold !important;
+   }
+}
+
+.input_pax {
+   text-align: center;
+}
+
+.custom-control-label {
+   margin-left: 8px;
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border: 0;
+}
+
+.filltering-items {
+   .form-control {
+      &.search-in-table {
+         background-color: $white !important;
+      }
+   }
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
+   border-color: rgba($gold, .4);
+   background-color: rgba($gold, .4);
+}
+
+/* ----------------------------------- Footer Component ----------------------------------- */

@@ -1,0 +1,127 @@
+// media system
+
+$desktopWideScreen: 1170px;
+$desktopScreen: 1024px;
+$tabletScreen: 992px;
+$tabletwideScreen: 768px;
+$phoneWideScreen: 676px;
+$phoneScreen: 470px;
+$phoneSmScreen: 320px;
+
+
+// Color system
+
+$gray-100: #FBFBFB !default;
+$gray-120: #F7F7F7 !default;
+$black: #0A1213 !default;
+$white: #FFFFFF !default;
+$red-300: #FFD8E0 !default;
+$red-500: #FB2451 !default;
+$blue-800: #33475B !default;
+
+$blue-dark: #222233 !default;
+$blue-light: #EDF7FE !default;
+$blue-200: rgba($blue-dark, 0.06) !default;
+$blue-500: #0F76C8 !default;
+$green: #109A14 !default;
+$green-light: #E7F7E0 !default;
+
+$gold: #8B6B3B !default;
+$gold-light: #F2EFEA !default;
+
+
+// Gradient colors Variables
+
+$bg-gradient-color: -webkit-linear-gradient(90deg, hsla(34, 13%, 11%, 1) 22%, hsla(6, 100%, 28%, .9) 100%);
+$bg-gradient-color-gray: -webkit-linear-gradient(90deg, hsla(34, 13%, 11%, 1) 0%, hsla(182, 79%, 19%, 1) 100%);
+
+
+// Background colors Variables
+
+$bg-gray-light: #F9FBFD;
+$bg-blue-light: $blue-light;
+
+
+// text colors Variables 
+
+$text-white-heading: $white;
+$text-white-content: rgba($white, .8);
+$text-red-heading: $red-500;
+$text-red-content: rgba($red-500, .8);
+
+$text-dark-heading: $blue-dark;
+$text-dark-content: rgba($blue-dark, .8);
+
+$text-gold-heading: $gold;
+$text-gold-content: rgba($gold, .8);
+
+
+// text gradient colors 
+$text-gradient-red: -webkit-linear-gradient(-70deg, $red-500 0%, $red-300 100%);
+
+
+// Typography Variables
+$open-sans-font: 'Open Sans',
+sans-serif;
+$roboto-font: 'Roboto',
+sans-serif;
+$rubik-font: 'Rubik',
+sans-serif;
+$tajawal-font: 'Tajawal',
+sans-serif;
+
+
+// Heading sizes - desktop
+$h00-size: 3.125rem;
+$h0-size: 2.25rem;
+$h1-size: 1.875rem;
+$h2-size: 1.5rem;
+$h3-size: 1.25rem;
+$h4-size: 1rem;
+$h5-size: 0.875rem;
+$h6-size: 0.75rem;
+
+
+// Heading sizes - mobile
+
+$h00-size-mobile: 2.5rem; // 40px
+$h0-size-mobile: 2rem; // 32px
+$h1-size-mobile: 1.5rem; // 24px
+$h2-size-mobile: 1.375rem; // 22px
+$h3-size-mobile: 1.125rem; //18px
+
+
+// Font weight variables
+
+$font-weight-extra-bold: 800 !default;
+$font-weight-bold: 700 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-light: 400 !default;
+
+// Line heights
+$lh-condensed-ultra: 1 !default;
+$lh-condensed: 1.25 !default;
+$lh-default: 1.5 !default;
+
+
+// p 
+
+$f1 : 24px !important;
+$f2 : 20px !important;
+$f3 : 16px !important;
+$f4 : 14px !important;
+$f5 : 12px !important;
+
+// Box shadow
+
+$box-shadow: 0 1px 0 rgba($blue-800, 0.04) !default;
+$box-shadow-medium: 0 3px 6px rgba($blue-800, 0.12) !default;
+$box-shadow-large: 0 8px 16px rgba($blue-800, 0.08) !default;
+$box-shadow-extra-large: 0 12px 38px rgba($blue-800, 0.2) !default;
+
+
+// Border
+$border-base: 1px solid rgba($blue-dark, .1);
+
+// padding
+$lg-block-padding: 80px 0;

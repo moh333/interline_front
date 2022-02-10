@@ -1,0 +1,139 @@
+{
+   "orders": [{
+         "id": 21344,
+         "name": "Vanessa Robertson",
+         "phone": "+44 164 632 421",
+         "date": "vanessaRob@gmail.com",
+         "Location": "frankfurt",
+         "status": "completed"
+      },
+      {
+         "id": 46356,
+         "name": "Vanessa Robertson",
+         "phone": "+44 164 632 421",
+         "date": "vanessaRob@gmail.com",
+         "Location": "frankfurt",
+         "status": "in progress"
+      },
+      {
+         "id": 67867,
+         "name": "Vanessa Robertson",
+         "phone": "+44 164 632 421",
+         "date": "vanessaRob@gmail.com",
+         "Location": "frankfurt",
+         "status": "canceld"
+      }
+   ],
+   "orders_statistics": [{
+         "type": "all orders",
+         "quantity": 50
+      },
+      {
+         "type": "in progress",
+         "quantity": 40
+      },
+      {
+         "type": "completed",
+         "quantity": 7
+      },
+      {
+         "type": "canceld",
+         "quantity": 3
+      }
+   ],
+   "vehicles": [{
+         "id": 1,
+         "provider": "customer",
+         "type": "compact",
+         "category": "AUTO",
+         "v_class": "Business Class",
+         "group": "Limousine",
+         "size": "Medium",
+         "pax": 3,
+         "min": 20,
+         "max": 120,
+         "name": "2100 [2016 ford f-150]",
+         "license": "1QW2144",
+         "status": "on the road",
+         "payRate": 12,
+         "fuelType": "Diesel",
+         "standardConsumption": 2,
+         "tireSetPrice": 5,
+         "tireLifespan": 677,
+         "serviceCosts": 45,
+         "serviceInterval": 21,
+         "rentDailyRate": 78,
+         "basePrice_hr": 75,
+         "basePrice_km": 27
+      },
+      {
+         "id": 2,
+         "provider": "producer",
+         "type": "executive",
+         "category": "AUTO",
+         "v_class": "Business Class",
+         "group": "Limousine",
+         "size": "Medium",
+         "pax": 3,
+         "min": 20,
+         "max": 120,
+         "name": "Marcedes",
+         "license": "1QW2144",
+         "status": "available",
+         "payRate": 12,
+         "fuelType": "Diesel",
+         "standardConsumption": 2,
+         "tireSetPrice": 5,
+         "tireLifespan": 677,
+         "serviceCosts": 45,
+         "serviceInterval": 21,
+         "rentDailyRate": 78,
+         "basePrice_hr": 75,
+         "basePrice_km": 27
+      },
+      {
+         "id": 3,
+         "provider": "customer",
+         "type": "Grober SUV",
+         "category": "AUTO",
+         "v_class": "Business Class",
+         "group": "Limousine",
+         "size": "Medium",
+         "pax": 3,
+         "min": 20,
+         "max": 120,
+         "name": "BMW X7",
+         "license": "1QW2144",
+         "status": "out of service",
+         "payRate": 12,
+         "fuelType": "Diesel",
+         "standardConsumption": 2,
+         "tireSetPrice": 5,
+         "tireLifespan": 677,
+         "serviceCosts": 45,
+         "serviceInterval": 21,
+         "rentDailyRate": 78,
+         "basePrice_hr": 75,
+         "basePrice_km": 27
+      }
+   ],
+
+   "vehicles_statistics": [{
+         "type": "all vehicles",
+         "quantity": 50
+      },
+      {
+         "type": "on the road",
+         "quantity": 40
+      },
+      {
+         "type": "available",
+         "quantity": 7
+      },
+      {
+         "type": "out of service",
+         "quantity": 3
+      }
+   ]
+
+}

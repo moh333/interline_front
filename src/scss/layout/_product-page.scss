@@ -1,0 +1,22 @@
+.product-infos {
+   // height: 5000px;
+}
+.product-image {
+   max-height: 450px;
+}
+
+.personal-infos  {
+   &.p-sticky {
+      position: sticky;
+      top: 30px;
+   }
+}
+
+.uppy-Dashboard-poweredBy {
+   display: none !important
+}
+
+.uppy-Dashboard-inner {
+   width: 100% !important;
+   height: 400px !important;
+}

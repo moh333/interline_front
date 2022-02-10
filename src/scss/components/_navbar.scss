@@ -1,0 +1,164 @@
+/* ----------------------------------- navbar Component ----------------------------------- */
+
+/* ---------------- reset the navbar ---------------- */
+.navbar {
+   height: auto;
+   padding: 0 !important;
+}
+
+.navbar-brand {
+   padding: 0;
+   display: block;
+   width: auto;
+
+   ._logo {
+      width: 90px;
+      max-width: 90px;
+   }
+}
+
+/* ---------------- logo in navbar ---------------- */
+
+.navbar-brand.md-logo {
+   width: 170px;
+   max-width: 170px;
+   margin-right: -30px
+}
+
+.navbar-brand .sm-logo {
+   width: 40px;
+   max-width: 40px;
+}
+
+/* ---------------- main navbar ---------------- */
+
+.main-navbar {
+   .navbar {
+      background-color: transparent;
+      padding: 1rem 1rem;
+      font-weight: 500;
+      position: relative;
+      width: 100%;
+      z-index: 999;
+   }
+
+   .navbar-nav {
+      font-weight: $font-weight-bold;
+      color: $text-dark-heading;
+      font-size: $h5-size;
+      min-height: 60px;
+   }
+
+   .btn {
+      font-size: $h6-size;
+   }
+}
+
+/* ---------------- main navbar nav wrap ---------------- */
+.navbar-nav {
+   .nav-item {
+      height: inherit;
+      cursor: pointer;
+      transition: 0.3s;
+
+      .nav-link {
+         margin-top: 10px;
+         margin-bottom: 10px;
+         color: rgba($blue-dark, 0.9);
+      }
+
+      &.active {
+         color: rgba($blue-dark, 1);
+         border-bottom: 2px solid $gold;
+      }
+   }
+
+   .dropdown-item {
+      color: $text-dark-content;
+   }
+
+}
+
+
+
+/* nav item on hover force state */
+.hover-item {
+   border-bottom: 3px solid transparent;
+   border-top: 3px solid transparent;
+   border-radius: 0;
+
+   &:hover {
+      background-color: transparent;
+      border-color: transparent;
+
+      .nav-link {
+         background-color: rgba($blue-dark, 0.05);
+         color: $blue-dark !important;
+      }
+   }
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+   background-color: transparent;
+   color: inherit;
+}
+
+.nav-item_has-link {
+   ._has-arrow {
+      position: relative;
+      margin-bottom: 10px;
+
+      &::after {
+         position: absolute;
+         content: "";
+         display: inline-block;
+         border-right: 3px solid rgba($blue-dark, 0.7);
+         border-bottom: 3px solid rgba($blue-dark, 0.7);
+         top: 40%;
+         transform: translateY(-50%);
+         right: 17px;
+         width: 10px;
+         height: 10px;
+         transform: rotate(-45deg);
+      }
+
+      &.nav-link.router-link-active {
+         &::after {
+            border-right-color: $white;
+            border-bottom-color: $white;
+            transform: rotate(45deg);
+         }
+      }
+   }
+
+   ._sub-link {
+      border-radius: 0 !important;
+      border-left: 4px solid rgba($blue-dark, 0.07);
+      margin-left: 10px;
+
+      &.nav-link.router-link-active {
+         background-color: transparent;
+         color: $blue-dark;
+
+         svg {
+            fill: rgba($blue-dark, 0.7)
+         }
+
+         border-left-color: $gold
+      }
+   }
+}
+
+/* navbar toggler button */
+.navbar-toggler {
+   border: none;
+   padding: 0;
+
+   svg {
+      fill: $text-dark-heading;
+   }
+}
+
+/* ----------------------------------- end navbar Component ----------------------------------- */

@@ -1,0 +1,119 @@
+.admin-header,
+.sidebar-body,
+.sidebar-footer {
+   padding: 15px 25px;
+
+}
+
+
+.admin-header,
+.int-admin {
+   background-color: $gray-100
+}
+
+.sidebar-footer {}
+
+.sidebar-wrap {
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   border-right: $border-base;
+   height: 100%;
+   z-index: 14;
+   transition: width ease-in
+}
+
+.sidebar {
+   z-index: 11;
+   // overflow: hidden;
+   position: relative;
+   flex: 0 0 280px;
+   height: 100%;
+
+}
+
+.nav-link {
+   span {
+      display: inline-block;
+      white-space: nowrap
+   }
+}
+
+.sidebar-open {
+   width: 280px;
+   min-width: 280px;
+
+   .nav-link {
+      span {
+         transition: width 800s;
+         opacity: 1;
+      }
+   }
+}
+
+.sidebar-close {
+   width: 80px;
+   min-width: 80px;
+
+   .nav-link {
+      span {
+         transition: width 500ms;
+         opacity: 0;
+         display: none;
+      }
+   }
+
+   .sidebar-body,
+   .sidebar-header,
+   .sidebar-footer {
+      padding: 15px;
+   }
+
+   .nav-item_has-link ._sub-link {
+      margin-left: -4px
+   }
+}
+
+.toggle-sidebar {
+   transition: all .3s;
+   position: fixed;
+   left: 260px;
+   top: 42px;
+   z-index: 999;
+   line-height: 30px;
+   text-align: center;
+   background-color: $white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   box-shadow: $box-shadow-large;
+   padding: 8px !important;
+   background-color: $gold;
+
+   svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff
+   }
+}
+
+.sidebar-body {
+
+   .nav-link {
+      padding: .8rem 1rem;
+
+      svg {
+         fill: rgba(34, 34, 51, 0.7);
+      }
+
+      &.router-link-active {
+         background-color: $blue-dark;
+         color: $white;
+
+         svg {
+            fill: $white;
+         }
+      }
+   }
+}
